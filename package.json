@@ -3,12 +3,17 @@
   "displayName": "sh_snippets",
   "description": "This is code snippets for oriental-salad team",
   "version": "0.0.1",
+  "publisher": "wjdtmfgh",
   "engines": {
     "vscode": "^1.83.0"
   },
   "categories": [
     "Snippets"
   ],
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/Jeongseulho/sh_snippets"
+  },
   "contributes": {
     "snippets": [
       {
