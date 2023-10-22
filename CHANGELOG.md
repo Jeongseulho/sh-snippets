@@ -8,3 +8,5 @@
   - jest testing prefix change `jt` to `orjt`
   - rewrite README.md
   - displayName change `sh_snippets` to `sh-snippets`
+- 0.0.4 - 2023.10.23
+  - add Props at Basic Component snippet

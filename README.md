@@ -133,7 +133,9 @@ export default function NotFound() {
 
 ```typescript
 // file name: test.tsx
-export default function test() {
+interface Props {}
+
+export default function test({}: Props) {
   return <div className=""></div>;
 }
 ```
