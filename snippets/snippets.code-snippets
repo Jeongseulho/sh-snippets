@@ -1,0 +1,146 @@
+{
+  "Common Type": {
+    "prefix": "orct",
+    "body": ["export type ${1:${TM_FILENAME_BASE}} = ${2:};"],
+    "description": "Common Type"
+  },
+  "Common Interface": {
+    "prefix": "orci",
+    "body": ["export interface ${1:${TM_FILENAME_BASE}} {", "  ${2:}", "};"],
+    "description": "Common Interface"
+  },
+  "Common Util Fnc": {
+    "prefix": "orcuf",
+    "body": [
+      "export const ${1:${TM_FILENAME_BASE}} = (${2:}) => {",
+      "  ${3:}",
+      "};"
+    ],
+    "description": "Common Util Fnc"
+  },
+  "Common Hook": {
+    "prefix": "orch",
+    "body": [
+      "export const ${1:${TM_FILENAME_BASE}} = (${2:}) => {",
+      "  ${3:}",
+      "};"
+    ],
+    "description": "Common Hook"
+  },
+  "Common Constant": {
+    "prefix": "orcc",
+    "body": ["export const ${1:${TM_FILENAME_BASE}} = {", "  ${2:}", "};"],
+    "description": "Common Constant"
+  },
+  "Zustand Store With Devtools": {
+    "prefix": "orzsd",
+    "body": [
+      "import { create } from \"zustand\";",
+      "import { devtools } from \"zustand/middleware\";",
+      "",
+      "type State = {};",
+      "",
+      "type Actions = {",
+      "  reset: () => void;",
+      "};",
+      "",
+      "const initialState: State = {};",
+      "",
+      "const ${1:${TM_FILENAME_BASE}} = create(",
+      "  devtools<State & Actions>((set) => ({",
+      "    ...initialState,",
+      "    reset: () => set(initialState),",
+      "  }))",
+      ");",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "Zustand Store With Devtools"
+  },
+  "Nextjs Page": {
+    "prefix": "ornp",
+    "body": [
+      "export default function Page() {",
+      "  return (",
+      "    <main className="">",
+      "      ${1:}",
+      "    </main>",
+      "  );",
+      "};"
+    ],
+    "description": "Nextjs Page"
+  },
+  "Nextjs Layout": {
+    "prefix": "ornla",
+    "body": [
+      "export default function Layout() {",
+      "  return (",
+      "    <div className="">",
+      "      ${1:}",
+      "    </div>",
+      "  );",
+      "};"
+    ],
+    "description": "Nextjs Layout"
+  },
+  "Nextjs Loading": {
+    "prefix": "ornlo",
+    "body": [
+      "export default function Loading() {",
+      "  return (",
+      "    <div className="">",
+      "      ${1:}",
+      "    </div>",
+      "  );",
+      "};"
+    ],
+    "description": "Nextjs Loading"
+  },
+  "Nextjs Error": {
+    "prefix": "orne",
+    "body": [
+      "'use client'",
+      "",
+      "export default function Error({",
+      "  error,",
+      "  reset,",
+      "}: {",
+      "  error: Error & { digest?: string };",
+      "  reset: () => void;",
+      "}) {",
+      "  return (",
+      "    <div className="">",
+      "      Error: {error.message}",
+      "      <button onClick={() => reset()}>Try again</button>",
+      "    </div>",
+      "  );",
+      "}"
+    ],
+    "description": "Nextjs Error"
+  },
+  "Nextjs Not Found": {
+    "prefix": "ornnf",
+    "body": [
+      "export default function NotFound() {",
+      "  return (",
+      "    <div className="">",
+      "      ${1:}",
+      "    </div>",
+      "  );",
+      "};"
+    ],
+    "description": "Nextjs Not Found"
+  },
+  "Basic Component": {
+    "prefix": "orbc",
+    "body": [
+      "export default function ${1:${TM_FILENAME_BASE}}() {",
+      "  return (",
+      "    <div className="">",
+      "      ${2:}",
+      "    </div>",
+      "  );",
+      "};"
+    ],
+    "description": "Basic Component"
+  }
+}
