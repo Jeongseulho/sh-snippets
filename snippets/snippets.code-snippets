@@ -70,19 +70,19 @@
     ],
     "description": "Nextjs Page"
   },
- "Nextjs Layout": {
-  "prefix": "ornla",
-  "body": [
-    "interface Props {",
-    "  children: React.ReactNode;",
-    "}",
-    "",
-    "export default function Layout({ children }: Props) {",
-    "  return <div class=\"\">{children}</div>;",
-    "}"
-  ],
-  "description": "Nextjs Layout"
-},
+  "Nextjs Layout": {
+    "prefix": "ornla",
+    "body": [
+      "interface Props {",
+      "  children: React.ReactNode;",
+      "}",
+      "",
+      "export default function Layout({ children }: Props) {",
+      "  return <div className=\"\">{children}</div>;",
+      "}"
+    ],
+    "description": "Nextjs Layout"
+  },
   "Nextjs Loading": {
     "prefix": "ornlo",
     "body": [
@@ -96,27 +96,27 @@
     ],
     "description": "Nextjs Loading"
   },
- "Nextjs Error": {
-  "prefix": "orne",
-  "body": [
-    "\"use client\";",
-    "",
-    "interface Props {",
-    "  error: Error & { digest?: string };",
-    "  reset: () => void;",
-    "}",
-    "",
-    "export default function Error({ error, reset }: Props) {",
-    "  return (",
-    "    <div className=\"\">",
-    "      Error: {error.message}",
-    "      <button onClick={() => reset()}>Try again</button>",
-    "    </div>",
-    "  );",
-    "}"
-  ],
-  "description": "Nextjs Error"
-},
+  "Nextjs Error": {
+    "prefix": "orne",
+    "body": [
+      "\"use client\";",
+      "",
+      "interface Props {",
+      "  error: Error & { digest?: string };",
+      "  reset: () => void;",
+      "}",
+      "",
+      "export default function Error({ error, reset }: Props) {",
+      "  return (",
+      "    <div className=\"\">",
+      "      Error: {error.message}",
+      "      <button onClick={() => reset()}>Try again</button>",
+      "    </div>",
+      "  );",
+      "}"
+    ],
+    "description": "Nextjs Error"
+  },
   "Nextjs Not Found": {
     "prefix": "ornnf",
     "body": [
@@ -144,19 +144,19 @@
     "description": "Basic Component"
   },
   "Jest Testing": {
-  "prefix": "jt",
-  "body": [
-    "describe(\"${1:}\", () => {",
-    "  it(\"${2:}\", () => {",
-    "    // given",
-    "    ${3:}",
-    "    // when",
-    "    ${4:}",
-    "    // then",
-    "    ${5:}",
-    "  });",
-    "});"
-  ],
-  "description": "Jest Testing"
-}
+    "prefix": "orjt",
+    "body": [
+      "describe(\"${1:}\", () => {",
+      "  it(\"${2:}\", () => {",
+      "    // given",
+      "    ${3:}",
+      "    // when",
+      "    ${4:}",
+      "    // then",
+      "    ${5:}",
+      "  });",
+      "});"
+    ],
+    "description": "Jest Testing"
+  }
 }
