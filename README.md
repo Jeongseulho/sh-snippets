@@ -137,3 +137,15 @@ export default function test() {
   return <div className=""></div>;
 }
 ```
+
+### jt - Jest Testing
+
+```typescript
+describe('', () => {
+  it('', () => {
+    // given
+    // when
+    // then
+  });
+});
+```
