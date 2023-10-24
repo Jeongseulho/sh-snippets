@@ -144,7 +144,7 @@ export default function test({}: Props) {
 }
 ```
 
-### jt - Jest Testing
+### orjt - Jest Testing
 
 ```typescript
 describe('', () => {
