@@ -10,3 +10,5 @@
   - displayName change `sh_snippets` to `sh-snippets`
 - 0.0.4 - 2023.10.23
   - add Props at Basic Component snippet
+- 0.0.5 - 2023.10.24
+  - downgrade vscode version to 1.74.3

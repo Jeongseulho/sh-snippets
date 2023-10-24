@@ -2,6 +2,10 @@
 
 This snippets is for oriental-salad team. It is used for creating a new file with a template.
 
+## constraints
+
+Need vscode 1.74.3+.
+
 ## Use for
 
 1. Typescript
