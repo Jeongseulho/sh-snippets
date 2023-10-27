@@ -163,5 +163,12 @@
       "});"
     ],
     "description": "Jest Testing"
+  },
+  "use client": {
+    "prefix": "oruc",
+    "body": [
+      "'use client';"
+    ],
+    "description": "use client"
   }
 }
