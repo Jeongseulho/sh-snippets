@@ -2,7 +2,7 @@
   "name": "sh-snippets",
   "displayName": "sh-snippets",
   "description": "This is code snippets for oriental-salad team",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "publisher": "wjdtmfgh",
   "engines": {
     "vscode": "^1.74.3"
